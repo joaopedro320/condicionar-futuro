@@ -257,7 +257,13 @@ header.site{position:sticky;top:0;z-index:40;background:rgba(9,58,94,0.95);backd
 form.diagnostic{background:#fff;border-radius:18px;padding:28px;box-shadow:0 20px 50px rgba(4,26,46,0.25);}
 form.diagnostic label{display:block;font-size:13px;font-weight:700;color:var(--ink-soft);margin:16px 0 6px;}
 form.diagnostic label:first-child{margin-top:0;}
-form.diagnostic input,form.diagnostic select{width:100%;padding:13px 14px;border-radius:9px;border:1.5px solid var(--line);background:var(--sky);color:var(--ink);font-size:15px;font-family:inherit;}
+form.diagnostic input,form.diagnostic select,form.diagnostic textarea{width:100%;padding:13px 14px;border-radius:9px;border:1.5px solid var(--line);background:var(--sky);color:var(--ink);font-size:15px;font-family:inherit;}
+form.diagnostic textarea{resize:vertical;line-height:1.5;}
+form.diagnostic .consent input[type="checkbox"]{
+  width:17px !important;height:17px !important;padding:0 !important;margin:2px 0 0 !important;
+  border-radius:4px !important;background:#fff !important;border:1.5px solid var(--line) !important;
+  accent-color:var(--green-bright);flex-shrink:0;
+}
 .consent{display:flex;gap:8px;align-items:flex-start;margin-top:16px;font-size:12px;color:var(--ink-soft);}
 .consent input{width:auto;margin-top:2px;flex-shrink:0;}
 .field-error{display:none;color:#C0392B;font-size:12.5px;margin-top:6px;}
@@ -776,9 +782,9 @@ details.faq summary:hover{color:var(--blue);}
         <option>Ainda não sei</option>
       </select>
 
-      <label for="whatsapp">WhatsApp (com DDD)</label>
-      <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" placeholder="31 9XXXX-XXXX">
-      <span class="field-error" id="err-whatsapp">Preencha seu WhatsApp com DDD.</span>
+      <label for="descricao">Descreva seu projeto</label>
+      <textarea id="descricao" name="descricao" rows="3" placeholder="Ex: apartamento de 90m², 3 ambientes, quero trocar o ar condicionado atual"></textarea>
+      <span class="field-error" id="err-descricao">Conta pra gente um pouco do seu projeto.</span>
 
       <label class="consent">
         <input type="checkbox" id="consent">
@@ -931,15 +937,15 @@ document.getElementById('diagForm').addEventListener('submit', function(e){
   e.preventDefault();
 
   var nomeEl = document.getElementById('nome');
-  var whatsEl = document.getElementById('whatsapp');
+  var descEl = document.getElementById('descricao');
   var consentEl = document.getElementById('consent');
   var tipo = document.getElementById('tipo').value;
   var nome = nomeEl.value.trim();
-  var whats = whatsEl.value.trim();
+  var descricao = descEl.value.trim();
 
   var fields = [
     {input: nomeEl, error: document.getElementById('err-nome'), valid: nome.length > 1},
-    {input: whatsEl, error: document.getElementById('err-whatsapp'), valid: whats.replace(/\D/g,'').length >= 10},
+    {input: descEl, error: document.getElementById('err-descricao'), valid: descricao.length > 4},
     {input: consentEl, error: document.getElementById('err-consent'), valid: consentEl.checked}
   ];
 
@@ -953,12 +959,12 @@ document.getElementById('diagForm').addEventListener('submit', function(e){
   if (firstInvalid) { firstInvalid.focus(); return; }
 
   if (window.dataLayer) { window.dataLayer.push({event: 'gerar_lead_diagnostico', tipo_projeto: tipo}); }
-  var msg = 'Olá, meu nome é ' + nome + '. Tenho um projeto ' + tipo.toLowerCase() + ' e gostaria de solicitar o diagnóstico técnico gratuito. Meu WhatsApp: ' + whats;
+  var msg = 'Olá, meu nome é ' + nome + '. Tenho um projeto ' + tipo.toLowerCase() + '. ' + descricao + '. Gostaria de solicitar o diagnóstico técnico gratuito.';
   window.open('https://wa.me/5531996380915?text=' + encodeURIComponent(msg), '_blank');
 });
 
 // limpa o erro assim que o campo é corrigido
-['nome','whatsapp'].forEach(function(id){
+['nome','descricao'].forEach(function(id){
   document.getElementById(id).addEventListener('input', function(){
     this.classList.remove('input-invalid');
     document.getElementById('err-' + id).classList.remove('show');
