@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <title>Condicionar Futuro | Climatização de Alto Padrão em Belo Horizonte · VRF, Chillers e PMOC</title>
 <meta name="description" content="Projeto e instalação de climatização assinados por engenheiro mecânico especialista. VRF, chillers e PMOC para residências de alto padrão, comércio e indústria em Belo Horizonte.">
 <link rel="canonical" href="https://condicionarfuturo.com.br/">
-<link rel="icon" href="img/logo.png">
+<link rel="icon" href="img/favicon.png">
 
 <meta property="og:type" content="business.business">
 <meta property="og:site_name" content="Condicionar Futuro">
@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -37,7 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "description": "Empresa de engenharia de climatização em Belo Horizonte, especialista em projeto, instalação e manutenção de sistemas VRF, chillers e PMOC para residências de alto padrão, comércio e indústria.",
   "areaServed": {"@type": "City", "name": "Belo Horizonte"},
   "address": {"@type": "PostalAddress", "addressLocality": "Belo Horizonte", "addressRegion": "MG", "addressCountry": "BR"},
-  "telephone": "+5531996380915",
+  "telephone": "+553184710464",
   "email": "comercial@condicionarfuturo.com.br",
   "sameAs": ["https://www.instagram.com/condicionarfuturo", "https://www.google.com/maps?cid=405941509386579112"],
   "priceRange": "$$$",
@@ -65,28 +65,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <style>
 :root{
-  --navy:#021D33;
-  --navy-2:#04294A;
-  --navy-3:#0A3960;
-  --blue:#0C4A8E;
-  --blue-soft:#E8F1FA;
-  --green:#4E9B2E;
-  --green-bright:#6FBF3A;
-  --green-deep:#2F6E1E;
-  --leaf:#B8E684;
-  --ink:#10202D;
+  --navy:#0D2D45;
+  --navy-2:#123B5A;
+  --navy-3:#17496E;
+  --blue:#1E86E5;
+  --blue-soft:#E7F1FC;
+  --green:#2E7D32;
+  --green-bright:#3E9B43;
+  --green-deep:#1F5C23;
+  --leaf:#A5D6A7;
+  --ink:#17262F;
   --ink-soft:#5A6E7C;
   --bg:#FFFFFF;
-  --bg-soft:#F4F7F9;
+  --bg-soft:#F2F4F5;
   --line:#E2EAEF;
   --line-dark:rgba(255,255,255,0.14);
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-html,body{overflow-x:hidden;max-width:100%;}
+html{overflow-x:clip;}
+body{overflow-x:clip;max-width:100%;}
 body{
   margin:0;background:var(--bg);color:var(--ink);
-  font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;
+  font-family:'Poppins',system-ui,sans-serif;font-size:16px;line-height:1.7;
   -webkit-font-smoothing:antialiased;
 }
 h1,h2,h3,h4{font-family:'Poppins',system-ui,sans-serif;font-weight:600;line-height:1.2;margin:0;letter-spacing:-0.01em;}
@@ -156,12 +157,13 @@ ul{margin:0;padding:0;list-style:none;}
 .hero-cta .btn-green:hover{animation-play-state:paused;}
 
 /* ---------- HEADER ---------- */
-header.site{position:sticky;top:0;z-index:60;background:rgba(2,29,51,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.07);}
+header.site{position:sticky;top:0;z-index:60;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08);transition:box-shadow .25s ease,background .25s ease;}
+header.site.scrolled{background:rgba(13,45,69,.96);backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.28);}
 .nav{display:flex;align-items:center;gap:20px;max-width:1180px;margin:0 auto;padding:12px 24px;}
-.brand{display:flex;align-items:center;gap:10px;}
-.brand img{width:38px;height:38px;border-radius:50%;}
-.brand span{font-family:'Poppins',sans-serif;color:#fff;font-weight:600;font-size:17px;line-height:1.05;}
-.brand small{display:block;font-weight:400;font-size:15px;color:#fff;opacity:.92;}
+.brand{display:inline-flex;align-items:center;}
+.brand img{height:64px;width:auto;border-radius:0;display:block;}
+.foot .brand img{height:66px;}
+@media (max-width:520px){.brand img{height:52px;}}
 .nav-links{display:flex;align-items:center;gap:24px;margin-left:auto;}
 .nav-links a{font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#CBDCE8;padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s;}
 .nav-links a:hover{color:#fff;border-color:var(--green-bright);}
@@ -181,7 +183,7 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(2,29,51,.94);backdr
 .burger{display:none;margin-left:auto;background:none;border:0;padding:8px;}
 .burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px;}
 @media (max-width:1000px){
-  .nav-links{position:fixed;inset:64px 0 auto;flex-direction:column;background:var(--navy);padding:18px 24px 26px;gap:2px;display:none;border-bottom:1px solid var(--line-dark);}
+  .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--navy);padding:18px 24px 26px;gap:2px;display:none;border-bottom:1px solid var(--line-dark);box-shadow:0 20px 40px rgba(0,0,0,.28);}
   .nav-links.open{display:flex;}
   .nav-links a{width:100%;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07);}
   .burger{display:block;}
@@ -281,15 +283,36 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(2,29,51,.94);backdr
 .serv svg{width:34px;height:34px;margin:0 auto 16px;stroke:var(--navy-3);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;}
 .serv h3{font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:8px;}
 .serv p{font-size:12.5px;color:var(--ink-soft);line-height:1.5;}
+.serv{display:flex;flex-direction:column;}
+.serv-cta{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--green);transition:color .2s,gap .2s;margin-top:auto;}
+.serv-cta::after{content:'›';font-size:14px;line-height:1;}
+.serv:hover .serv-cta{color:var(--green-bright);gap:9px;}
 @media (max-width:1000px){.serv-grid{grid-template-columns:repeat(3,1fr);}}
 @media (max-width:560px){.serv-grid{grid-template-columns:repeat(2,1fr);}}
 
+.sec-cta{margin-top:42px;text-align:center;}
 /* ---------- BENEFÍCIOS ---------- */
 .ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .ben{border-left:3px solid var(--green);padding:4px 0 4px 18px;}
 .ben h3{font-size:16px;margin-bottom:6px;}
 .ben p{font-size:14px;color:var(--ink-soft);}
 @media (max-width:880px){.ben-grid{grid-template-columns:1fr;}}
+
+
+/* ---------- SUSTENTABILIDADE ---------- */
+.sust{position:relative;overflow:hidden;background:linear-gradient(150deg,var(--navy) 0%,#0F3A2A 62%,#12522F 100%);color:#fff;}
+.sust::before{content:"";position:absolute;inset:0;background:
+   radial-gradient(520px 300px at 88% 8%,rgba(165,214,167,.16),transparent 60%),
+   radial-gradient(460px 320px at 4% 92%,rgba(30,134,229,.14),transparent 60%);pointer-events:none;}
+.sust .wrap{position:relative;z-index:2;}
+.sust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:8px;}
+.sust-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:26px 24px;display:flex;gap:16px;align-items:flex-start;transition:transform .22s ease,background .22s ease,border-color .22s ease;}
+.sust-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.09);border-color:rgba(165,214,167,.4);}
+.sust-card .si{flex:0 0 auto;width:52px;height:52px;border-radius:12px;background:rgba(165,214,167,.16);display:grid;place-items:center;}
+.sust-card .si svg{width:26px;height:26px;stroke:var(--leaf);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.sust-card h3{font-size:16.5px;color:#fff;margin-bottom:6px;}
+.sust-card p{font-size:14px;color:#CFE6D5;}
+@media (max-width:760px){.sust-grid{grid-template-columns:1fr;}}
 
 /* ---------- DEPOIMENTOS ---------- */
 .testi-sec{position:relative;overflow:hidden;}
@@ -357,7 +380,7 @@ details.faq[open] summary::after{content:"–";}
 details.faq p{padding:0 22px 20px;font-size:14.5px;color:var(--ink-soft);}
 
 /* ---------- CTA BAND ---------- */
-.cta-band{position:relative;overflow:hidden;background:linear-gradient(100deg,#04294A 0%,#0B3B33 46%,#2F6E1E 100%);color:#fff;}
+.cta-band{position:relative;overflow:hidden;background:linear-gradient(100deg,#0D2D45 0%,#0F3A2A 48%,#1F5C23 100%);color:#fff;}
 .cta-inner{display:grid;grid-template-columns:1.15fr .85fr auto;gap:36px;align-items:center;padding:56px 0;position:relative;z-index:2;}
 .cta-inner h2{font-size:clamp(23px,3vw,32px);}
 .cta-inner h2 em{font-style:normal;color:var(--green-bright);}
@@ -366,7 +389,7 @@ details.faq p{padding:0 22px 20px;font-size:14.5px;color:var(--ink-soft);}
 @media (max-width:980px){.cta-inner{grid-template-columns:1fr;gap:20px;padding:48px 0;} .cta-inner h2::before{display:none;}}
 
 /* ---------- FOOTER ---------- */
-footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
+footer.site{background:#08243A;color:#A9C0D1;padding:64px 0 0;}
 .foot-grid{display:grid;grid-template-columns:1.3fr .8fr .8fr 1fr 1.1fr;gap:32px;}
 .foot h4{font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:18px;}
 .foot li{margin-bottom:9px;font-size:14px;}
@@ -420,9 +443,8 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
 
 <header class="site">
   <div class="nav">
-    <a class="brand" href="#topo">
-      <img src="img/logo.png" alt="Condicionar Futuro" width="38" height="38">
-      <span>Condicionar<small>Futuro</small></span>
+    <a class="brand" href="#topo" aria-label="Condicionar Futuro, página inicial">
+      <img src="img/logo-cf-white.png" alt="Condicionar Futuro, Climatização Inteligente" width="190" height="54">
     </a>
     <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav-links" id="navLinks">
@@ -430,11 +452,12 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
       <a href="#empresa">A empresa</a>
       <a href="#servicos">Serviços</a>
       <a href="#projetos">Projetos</a>
+      <a href="#sustentabilidade">Sustentabilidade</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="#contato">Contato</a>
     </nav>
     <div class="nav-act">
-      <a class="wa-ico" href="https://wa.me/5531996380915?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener" aria-label="Falar no WhatsApp pra solicitar orçamento">
+      <a class="wa-ico" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener" aria-label="Falar no WhatsApp pra solicitar orçamento">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.5A9.44 9.44 0 002.6 11.94c0 1.67.44 3.3 1.28 4.74L2.5 21.5l4.95-1.3a9.4 9.4 0 004.59 1.17h.01a9.44 9.44 0 000-18.87z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.3 7.6c-.18-.42-.37-.43-.55-.44h-.46c-.16 0-.42.06-.64.3-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.7 4.1 3.79 2 .9 2.41.72 2.85.68.43-.04 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.28.18-.51.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.32-1.63-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.53-1.28-.77-1.83z" fill="currentColor"/></svg><span>WhatsApp</span>
       </a>
     </div>
@@ -458,7 +481,7 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
       </ul>
       <div class="hero-cta">
         <a class="btn btn-green" href="#contato">Solicitar diagnóstico técnico <span class="arw">›</span></a>
-        <a class="btn btn-ghost" href="https://wa.me/5531996380915?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener">Chamar no WhatsApp</a>
       </div>
       <p class="hero-note">Resposta em até 24h úteis · Sem compromisso</p>
     </div>
@@ -525,6 +548,7 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
         <div class="badge-float">Atuação em BH e região<b>15 anos de engenharia</b></div>
       </div>
     </div>
+      <div class="sec-cta"><a class="btn btn-green" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20com%20o%20engenheiro%20respons%C3%A1vel%20sobre%20meu%20projeto." target="_blank" rel="noopener">Falar com o engenheiro responsável <span class="arw">›</span></a></div>
   </div>
 </section>
 
@@ -612,6 +636,7 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
         <p>Acompanhamento contínuo pra garantir segurança, conforto e durabilidade.</p>
       </article>
     </div>
+      <div class="sec-cta"><a class="btn btn-green" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20come%C3%A7ar%20pela%20visita%20t%C3%A9cnica." target="_blank" rel="noopener">Quero começar pela visita técnica <span class="arw">›</span></a></div>
   </div>
 </section>
 
@@ -639,21 +664,22 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
         <div class="cap"><strong>Sistema técnico industrial</strong><span>Belo Horizonte · MG</span></div>
       </article>
       <article class="proj">
+        <img src="img/projeto-9.jpg" alt="Execução técnica de tubulação e infraestrutura de climatização" loading="lazy">
+        <span class="tag b">Execução</span>
+        <div class="cap"><strong>Infraestrutura técnica</strong><span>Belo Horizonte · MG</span></div>
+      </article>
+      <article class="proj">
         <img src="img/projeto-4.jpg" alt="Instalação de sistema VRF executada pela Condicionar Futuro" loading="lazy">
         <span class="tag g">Instalação</span>
         <div class="cap"><strong>Sistema VRF instalado</strong><span>Belo Horizonte · MG</span></div>
       </article>
       <article class="proj">
-        <img src="img/rede-de-dutos.png" alt="Rede de dutos para sistema de climatização" loading="lazy">
-        <span class="tag b">Execução</span>
-        <div class="cap"><strong>Rede de dutos</strong><span>Belo Horizonte · MG</span></div>
-      </article>
-      <article class="proj">
-        <img src="img/acabamento-instalacao.png" alt="Acabamento de instalação de climatização em obra de alto padrão" loading="lazy">
+        <img src="img/projeto-13.jpg" alt="Acabamento de instalação de climatização em obra de alto padrão" loading="lazy">
         <span class="tag g">Alto padrão</span>
         <div class="cap"><strong>Acabamento de obra</strong><span>Belo Horizonte · MG</span></div>
       </article>
     </div>
+      <div class="sec-cta"><a class="btn btn-green" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20projeto%20de%20climatiza%C3%A7%C3%A3o%20como%20os%20de%20voc%C3%AAs." target="_blank" rel="noopener">Quero um projeto assim <span class="arw">›</span></a></div>
   </div>
 </section>
 
@@ -668,26 +694,32 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
       <article class="serv">
         <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M7 8h10M7 12h6M7 16h8"/></svg>
         <h3>Projetos</h3><p>Dimensionamento técnico personalizado pra cada ambiente.</p>
+      <a class="serv-cta" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20projeto%20de%20climatiza%C3%A7%C3%A3o%20dimensionado%20pra%20meu%20ambiente." target="_blank" rel="noopener">Solicitar</a>
       </article>
       <article class="serv">
         <svg viewBox="0 0 24 24"><path d="M14.5 5.5a4 4 0 015.3 5.3L11 19.6a2.5 2.5 0 01-3.5-3.5l8.8-8.8"/><path d="M4 20l3-3"/></svg>
         <h3>Instalação</h3><p>Instalação com qualidade, segurança e eficiência.</p>
+      <a class="serv-cta" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20instala%C3%A7%C3%A3o%20de%20climatiza%C3%A7%C3%A3o." target="_blank" rel="noopener">Solicitar</a>
       </article>
       <article class="serv">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 3.5v2.2M12 18.3v2.2M20.5 12h-2.2M5.7 12H3.5M18 6l-1.6 1.6M7.6 16.4L6 18M18 18l-1.6-1.6M7.6 7.6L6 6"/></svg>
         <h3>Manutenção</h3><p>Preventiva e corretiva pra garantir o melhor desempenho.</p>
+      <a class="serv-cta" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sobre%20manuten%C3%A7%C3%A3o%20preventiva%20e%20corretiva." target="_blank" rel="noopener">Solicitar</a>
       </article>
       <article class="serv">
         <svg viewBox="0 0 24 24"><path d="M8 4h8v3H8z"/><path d="M6 6h2v2h8V6h2v14H6z"/><path d="M9 12h6M9 16h4"/></svg>
         <h3>PMOC</h3><p>Plano de Manutenção, Operação e Controle conforme normas.</p>
+      <a class="serv-cta" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sobre%20o%20PMOC%20pra%20minha%20empresa." target="_blank" rel="noopener">Solicitar</a>
       </article>
       <article class="serv">
         <svg viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15l3.5-4L15 14l4-6"/></svg>
         <h3>Consultoria</h3><p>Análise e soluções pra eficiência energética e qualidade do ar.</p>
+      <a class="serv-cta" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20uma%20consultoria%20em%20efici%C3%AAncia%20energ%C3%A9tica%20e%20qualidade%20do%20ar." target="_blank" rel="noopener">Solicitar</a>
       </article>
       <article class="serv">
         <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0113.6-5.7L20 8"/><path d="M20 4v4h-4"/><path d="M20 12a8 8 0 01-13.6 5.7L4 16"/><path d="M4 20v-4h4"/></svg>
         <h3>Retrofit</h3><p>Modernização de sistemas pra mais eficiência e economia.</p>
+      <a class="serv-cta" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20modernizar%20%28retrofit%29%20meu%20sistema%20de%20climatiza%C3%A7%C3%A3o." target="_blank" rel="noopener">Solicitar</a>
       </article>
     </div>
   </div>
@@ -711,9 +743,39 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
   </div>
 </section>
 
+<!-- ================= SUSTENTABILIDADE ================= -->
+<section class="sec sust" id="sustentabilidade">
+  <div class="wrap">
+    <div class="head-mb">
+      <span class="eyebrow on-dark">Climatização inteligente</span>
+      <h2 class="sec-title" style="color:#fff;">Conforto que respeita o planeta e a sua conta de luz.</h2>
+      <p class="lede">Eficiência energética não é discurso: entra no cálculo desde o projeto. Sistemas bem dimensionados consomem menos, duram mais e reduzem o impacto ambiental ao longo de toda a vida útil.</p>
+    </div>
+    <div class="sust-grid">
+      <article class="sust-card">
+        <span class="si"><svg viewBox="0 0 24 24"><path d="M12 3C8 7 6 10 6 13.5A6 6 0 0018 13.5C18 10 16 7 12 3z"/><path d="M12 21v-6M12 15c-1.6 0-2.6-1-3.2-2"/></svg></span>
+        <div><h3>Engenharia que respeita o planeta</h3><p>Projetos que valorizam pessoas e reduzem desperdício de energia em cada ambiente.</p></div>
+      </article>
+      <article class="sust-card">
+        <span class="si"><svg viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15l3.5-4L15 14l4-6"/></svg></span>
+        <div><h3>Eficiência que gera economia</h3><p>Menos consumo mês a mês, com equipamentos dimensionados para o uso real do espaço.</p></div>
+      </article>
+      <article class="sust-card">
+        <span class="si"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 3.5v2.2M12 18.3v2.2M20.5 12h-2.2M5.7 12H3.5M18 6l-1.6 1.6M7.6 16.4L6 18M18 18l-1.6-1.6M7.6 7.6L6 6"/></svg></span>
+        <div><h3>Tecnologia que proporciona conforto</h3><p>VRF, chillers e automação garantindo temperatura ideal com o mínimo de energia.</p></div>
+      </article>
+      <article class="sust-card">
+        <span class="si"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.4-3 8-7 9.5-4-1.5-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></span>
+        <div><h3>Compromisso que gera confiança</h3><p>Responsabilidade técnica e acompanhamento contínuo do primeiro contato ao pós-venda.</p></div>
+      </article>
+    </div>
+      <div class="sec-cta"><a class="btn btn-green" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20uma%20solu%C3%A7%C3%A3o%20de%20climatiza%C3%A7%C3%A3o%20eficiente%20e%20sustent%C3%A1vel." target="_blank" rel="noopener">Quero uma solução eficiente <span class="arw">›</span></a></div>
+  </div>
+</section>
+
 <!-- ================= DEPOIMENTOS ================= -->
 <section class="sec sec-dark testi-sec" id="depoimentos">
-  <svg class="leaf r" viewBox="0 0 200 200" aria-hidden="true"><path d="M190 10C120 10 40 50 30 130c-4 34 18 62 52 60 74-4 108-96 108-180z" fill="#2F6E1E"/><path d="M180 25C130 70 90 120 60 185" stroke="#4E9B2E" stroke-width="4" fill="none"/></svg>
+  <svg class="leaf r" viewBox="0 0 200 200" aria-hidden="true"><path d="M190 10C120 10 40 50 30 130c-4 34 18 62 52 60 74-4 108-96 108-180z" fill="#12522F"/><path d="M180 25C130 70 90 120 60 185" stroke="#2E7D32" stroke-width="4" fill="none"/></svg>
   <svg class="leaf l" viewBox="0 0 200 200" aria-hidden="true"><path d="M10 190c70 0 150-40 160-120 4-34-18-62-52-60C44 14 10 106 10 190z" fill="#0C4A8E"/></svg>
   <div class="wrap">
     <div class="testi-layout">
@@ -858,14 +920,13 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot">
-        <a class="brand" href="#topo">
-          <img src="img/logo.png" alt="Condicionar Futuro" width="38" height="38">
-          <span>Condicionar<small>Futuro</small></span>
+        <a class="brand" href="#topo" aria-label="Condicionar Futuro, página inicial">
+          <img src="img/logo-cf-white.png" alt="Condicionar Futuro, Climatização Inteligente" width="196" height="56">
         </a>
-        <p class="desc">Engenharia de climatização em Belo Horizonte: VRF, chillers e PMOC.</p>
+        <p class="desc">Climatização inteligente. Engenharia, eficiência e sustentabilidade em VRF, chillers e PMOC, em Belo Horizonte.</p>
         <div class="socials">
           <a href="https://www.instagram.com/condicionarfuturo" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.17.4.37 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.05 1.2-.25 1.8-.42 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.17-1 .37-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.05-1.8-.25-2.2-.42-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.17-.4-.37-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.05-1.2.25-1.8.42-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.17 1-.37 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1018.6 12 6.6 6.6 0 0012 5.4zm0 10.9A4.3 4.3 0 1116.3 12 4.3 4.3 0 0112 16.3zm6.9-11.1a1.55 1.55 0 11-1.55-1.55A1.55 1.55 0 0118.9 5.2z"/></svg></a>
-          <a href="https://wa.me/5531996380915?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.5A9.44 9.44 0 002.6 11.94c0 1.67.44 3.3 1.28 4.74L2.5 21.5l4.95-1.3a9.4 9.4 0 004.59 1.17h.01a9.44 9.44 0 000-18.87z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.3 7.6c-.18-.42-.37-.43-.55-.44h-.46c-.16 0-.42.06-.64.3-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.7 4.1 3.79 2 .9 2.41.72 2.85.68.43-.04 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.28.18-.51.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.32-1.63-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.53-1.28-.77-1.83z" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.5A9.44 9.44 0 002.6 11.94c0 1.67.44 3.3 1.28 4.74L2.5 21.5l4.95-1.3a9.4 9.4 0 004.59 1.17h.01a9.44 9.44 0 000-18.87z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.3 7.6c-.18-.42-.37-.43-.55-.44h-.46c-.16 0-.42.06-.64.3-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.7 4.1 3.79 2 .9 2.41.72 2.85.68.43-.04 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.28.18-.51.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.32-1.63-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.53-1.28-.77-1.83z" fill="currentColor"/></svg></a>
           <a href="https://www.google.com/maps?cid=405941509386579112" target="_blank" rel="noopener" aria-label="Perfil no Google"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1114.5 9 2.5 2.5 0 0112 11.5z"/></svg></a>
         </div>
       </div>
@@ -876,6 +937,7 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
           <li><a href="#empresa">A empresa</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#sustentabilidade">Sustentabilidade</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -893,7 +955,7 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
       </div>
       <div class="foot">
         <h4>Contato</h4>
-        <div class="contact-li"><svg viewBox="0 0 24 24"><path d="M4 6.5C4 5.7 4.7 5 5.5 5h2.2c.6 0 1.2.4 1.4 1l1 2.6c.2.5 0 1-.4 1.3l-1.2.9a11 11 0 004.7 4.7l.9-1.2c.3-.4.8-.6 1.3-.4l2.6 1c.6.2 1 .8 1 1.4v2.2c0 .8-.7 1.5-1.5 1.5A14.5 14.5 0 014 6.5z"/></svg><a href="https://wa.me/5531996380915?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener">(31) 99638-0915 · WhatsApp</a></div>
+        <div class="contact-li"><svg viewBox="0 0 24 24"><path d="M4 6.5C4 5.7 4.7 5 5.5 5h2.2c.6 0 1.2.4 1.4 1l1 2.6c.2.5 0 1-.4 1.3l-1.2.9a11 11 0 004.7 4.7l.9-1.2c.3-.4.8-.6 1.3-.4l2.6 1c.6.2 1 .8 1 1.4v2.2c0 .8-.7 1.5-1.5 1.5A14.5 14.5 0 014 6.5z"/></svg><a href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener">(31) 8471-0464 · WhatsApp</a></div>
         <div class="contact-li"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Belo Horizonte e Região Metropolitana · MG</span></div>
         <div class="contact-li"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Seg a Sex · 08h às 18h</span></div>
         <div class="contact-li"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg><a href="mailto:comercial@condicionarfuturo.com.br">comercial@condicionarfuturo.com.br</a></div>
@@ -918,11 +980,18 @@ footer.site{background:#001524;color:#A9C0D1;padding:64px 0 0;}
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/5531996380915?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+<a class="wa-float" href="https://wa.me/553184710464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20google%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20por%20favor%21" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.5A9.44 9.44 0 002.6 11.94c0 1.67.44 3.3 1.28 4.74L2.5 21.5l4.95-1.3a9.4 9.4 0 004.59 1.17h.01a9.44 9.44 0 000-18.87z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.3 7.6c-.18-.42-.37-.43-.55-.44h-.46c-.16 0-.42.06-.64.3-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.7 4.1 3.79 2 .9 2.41.72 2.85.68.43-.04 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.28.18-.51.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.32-1.63-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.53-1.28-.77-1.83z" fill="currentColor"/></svg>
 </a>
 
 <script>
+// sombra no header ao rolar
+(function(){
+  var h=document.querySelector('header.site');
+  var onScroll=function(){ h.classList.toggle('scrolled', window.scrollY>8); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+})();
+
 // menu mobile
 (function(){
   var b=document.getElementById('burger'), n=document.getElementById('navLinks');
@@ -971,7 +1040,7 @@ document.getElementById('diagForm').addEventListener('submit', function(e){
 
   if(window.dataLayer){ window.dataLayer.push({event:'gerar_lead_diagnostico', tipo_projeto:tipo}); }
   var msg='Olá, meu nome é '+nome+'. Tenho um projeto '+tipo.toLowerCase()+'. '+descricao+'. Gostaria de solicitar o diagnóstico técnico.';
-  window.open('https://wa.me/5531996380915?text='+encodeURIComponent(msg),'_blank');
+  window.open('https://wa.me/553184710464?text='+encodeURIComponent(msg),'_blank');
 });
 
 ['nome','descricao'].forEach(function(id){
@@ -991,7 +1060,7 @@ document.getElementById('newsletterForm').addEventListener('submit', function(e)
   var email=document.getElementById('newsletterEmail').value.trim();
   if(!email) return;
   var msg='Olá! Quero receber novidades sobre climatização e eficiência energética. Meu e-mail: '+email;
-  window.open('https://wa.me/5531996380915?text='+encodeURIComponent(msg),'_blank');
+  window.open('https://wa.me/553184710464?text='+encodeURIComponent(msg),'_blank');
 });
 </script>
 
